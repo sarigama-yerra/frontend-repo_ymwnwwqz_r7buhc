@@ -1,19 +1,20 @@
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
+import Experience from './components/Experience';
+import EducationSkills from './components/EducationSkills';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <Navbar />
+    <div className="min-h-screen bg-white text-slate-900">
+      <Header />
       <main>
         <Hero />
-        <Projects />
+        <Experience />
+        <EducationSkills />
         <Contact />
       </main>
-      <Footer />
+      <footer className="py-10 text-center text-sm text-slate-500">© {new Date().getFullYear()} Your Name. All rights reserved.</footer>
     </div>
   );
 }
